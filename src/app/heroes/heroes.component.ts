@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgFor, NgIf } from '@angular/common';
-
+import { RouterModule } from '@angular/router'; 
 import { Hero } from '../hero';
 import { HeroService } from '../hero.service';
 import { MessageService } from '../message.service';
@@ -11,7 +11,7 @@ import { HeroDetailComponent } from '../hero-detail/hero-detail.component';
   selector: 'app-heroes',
   templateUrl: './heroes.component.html',
   styleUrls: ['./heroes.component.css'],
-  imports: [NgFor, NgIf, HeroDetailComponent]
+  imports: [NgFor, NgIf, HeroDetailComponent, RouterModule]
 })
 export class HeroesComponent implements OnInit {
 
